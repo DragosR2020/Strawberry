@@ -1,0 +1,147 @@
+body {
+  margin: 5px;
+  overflow: hidden;
+  background-color: gray;
+}
+
+.container {
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+  overflow: hidden;
+  height: 98.5vh;
+  background-color: #262626;
+  color: white;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+  grid-template-rows: 0.3fr 2.5fr 1fr 0.3fr 1fr 0.8fr 0.5fr;
+  grid-template-areas:
+  "empty null null nada"
+  "empty img img nada"
+  "empty description description nada"
+  "empty x x nada"
+  "empty title title nada"
+  "empty order about nada"
+  "empty zero zero nada";
+}
+
+p {
+  margin: auto;
+  font-family: sans-serif;
+}
+#title {
+  margin: auto;
+  grid-area: title;
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+  font-weight: bold;
+  text-shadow: 0 0 50px black;
+  text-decoration: underline;
+}
+
+#description {
+  font-family: 'Permanent Marker', cursive;
+  grid-area: description;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding-top: 5%;
+  text-shadow: 0 0 50px white;
+}
+
+.strawberry {
+  grid-area: img;
+  background: url("./strawberry.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#order {
+  grid-area: order;
+  width: 60%;
+  height: 20%;
+  padding: 0.7em;
+  color: white;
+  background-color: #43a800;
+  text-align: center;
+  border-radius: 5%;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 0 30px gray;
+  text-shadow: 0 0 10px gray;
+}
+
+#about {
+  grid-area: about;
+  width: 60%;
+  height: 20%;
+  padding: 0.7em;
+  color: gray;
+  background-color: #e00000;
+  text-align: center;
+  border-radius: 5%;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 0 10px gray;
+  text-shadow: 0 0 10px gray;
+}
+
+#order:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: black;
+  box-shadow: 0 0 20px white;
+  text-shadow: 0 0 30px white;
+}
+
+#about:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 0 20px white;
+  text-shadow: 0 0 30px white;
+}
+
+@media (min-width: 950px) {
+  .container {
+    height: 96vh;
+    box-shadow: 0 0 50px black;
+    margin: 1%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2.2fr 1fr;
+    grid-template-rows: 0.5fr 2fr 2fr 2fr 0.5fr;
+    grid-template-areas:
+    "empty nothing nothing null"
+    "empty img title null"
+    "empty img description null"
+    "empty order about null"
+    "empty zero zero null";
+  }
+
+  .strawberry {
+    margin: 5%;
+  }
+
+  #title {
+    font-size: 100px;
+  }
+
+  #description {
+    font-size: 1.4em;
+    margin-bottom: 40%;
+  }
+
+  #order {
+    margin-right: 10%;
+    font-size: 20px;
+    padding: 0;
+    padding-top: 2%;
+  }
+
+  #about {
+    margin-left: 10%;
+    font-size: 20px;
+    padding: 0;
+    padding-top: 2%;
+  }
+}
