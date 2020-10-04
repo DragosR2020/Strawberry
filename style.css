@@ -33,7 +33,6 @@ p {
   grid-area: title;
   font-family: 'Dancing Script', cursive;
   font-size: 80px;
-  font-weight: bold;
   text-shadow: 0 0 50px black;
   text-decoration: underline;
 }
