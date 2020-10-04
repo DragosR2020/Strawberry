@@ -32,7 +32,7 @@ p {
   margin: auto;
   grid-area: title;
   font-family: 'Dancing Script', cursive;
-  font-size: 80px;
+  font-size: 60px;
   text-shadow: 0 0 50px black;
 }
 
@@ -82,6 +82,7 @@ p {
   font-weight: bold;
   box-shadow: 0 0 10px gray;
   text-shadow: 0 0 10px gray;
+  font-size: 15px;
 }
 
 #order:hover {
